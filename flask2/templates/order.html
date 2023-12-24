@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coffee Order Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #4CAF50;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose Your Coffee</h1>
+    <p>Select your favorite coffee type:</p>
+
+    <button onclick="orderCoffee('Espresso')">Espresso</button>
+    <button onclick="orderCoffee('Latte')">Latte</button>
+    <button onclick="orderCoffee('Cappuccino')">Cappuccino</button>
+
+    <script>
+        function orderCoffee(coffeeType) {
+            window.location.href = "/order/" + coffeeType;
+        }
+    </script>
+</body>
+</html>
